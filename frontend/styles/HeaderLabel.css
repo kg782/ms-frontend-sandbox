@@ -1,0 +1,55 @@
+.HeaderLabel .priority {
+  color: orange;
+}
+
+.HeaderLabel .sortable {
+  display: inline-block;
+}
+
+.HeaderLabel .sortable.default::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: #0000 #0000 #9c9c9c #0000;
+  position: absolute;
+  top: 9px;
+}
+
+.HeaderLabel .sortable.default::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #9c9c9c #0000 #0000 #0000;
+  content: '';
+  display: block;
+  top: 21px;
+  position: absolute;
+}
+
+.HeaderLabel .sortable.asc::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7.5px 10px 7.5px;
+  border-color: #0000 #0000 #000 #0000;
+  position: absolute;
+  top: 9px;
+}
+
+.HeaderLabel .sortable.desc::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 7.5px 0 7.5px;
+  border-color: #000 #0000 #0000 #0000;
+  content: '';
+  display: block;
+  top: 21px;
+  position: absolute;
+}

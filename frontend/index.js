@@ -82,7 +82,7 @@ const rootRoute = {
     getComponent: (nextState, cb) => {
       require.ensure([], require => {
         // use [yas] elisp error: Symbol's value as variable is void: \./Home/Home\.js if you prefer relative index.js
-        cb(null, require('Dashboard/Dashboard.js').default);
+        cb(null, require('MyTable/MyTable.js').default);
       });
     }
   },
